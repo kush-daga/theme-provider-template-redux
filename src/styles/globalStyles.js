@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
+import { darkTheme } from "./theme";
 const GlobalStyles = createGlobalStyle`
     * {
       box-sizing: border-box;
@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
       overflow-x: hidden;
       margin: 0;
       padding: 0;
+      background-color: ${darkTheme.background}
     }
     ul {
       list-style: none;
