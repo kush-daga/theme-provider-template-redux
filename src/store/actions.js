@@ -1,3 +1,5 @@
 import appActions from "./app/actions";
-
-export default { appActions };
+const actions = {
+  appActions,
+};
+export default actions;

@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
       overflow-x: hidden;
       margin: 0;
       padding: 0;
+      min-height:100vh;
       background-color: ${darkTheme.background}
     }
     ul {
