@@ -15,6 +15,11 @@ function App() {
   return (
     <ThemeProvider theme={theme === "lightTheme" ? lightTheme : darkTheme}>
       <button
+        style={{
+          outline: "none",
+          padding: "5px",
+          boder: "none",
+        }}
         onClick={() => {
           dispatch(actions.appActions.setTheme());
         }}
