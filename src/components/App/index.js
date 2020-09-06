@@ -17,7 +17,7 @@ function App() {
       <button
         style={{
           outline: "none",
-          padding: "5px",
+          padding: "5px 10px",
           boder: "none",
         }}
         onClick={() => {
