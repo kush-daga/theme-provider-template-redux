@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
-import actions from "store/actions";
-import { darkTheme, lightTheme } from "styles/theme.js";
+import actions from "../../store/actions";
+import { darkTheme, lightTheme } from "../../styles/theme.js";
 import styled from "styled-components";
 function App() {
   const theme = useSelector((state) => state.app.theme);
