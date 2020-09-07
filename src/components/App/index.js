@@ -14,19 +14,29 @@ function App() {
   }, [theme]);
   return (
     <ThemeProvider theme={theme === "lightTheme" ? lightTheme : darkTheme}>
-      <button
+      <div
         style={{
-          outline: "none",
-          padding: "5px 10px",
-          boder: "none",
-        }}
-        onClick={() => {
-          dispatch(actions.appActions.setTheme());
+          display: "flex",
+          width: "80%",
+          margin: "auto",
+          justifyContent: "space-between",
+          alignItems: "center",
         }}
       >
-        Change theme
-      </button>
-      <Text>Hello WOrlld</Text>
+        <button
+          style={{
+            outline: "none",
+            padding: "5px 10px",
+            boder: "none",
+          }}
+          onClick={() => {
+            dispatch(actions.appActions.setTheme());
+          }}
+        >
+          Change theme
+        </button>
+        <Text>Hello WOrlld</Text>
+      </div>
     </ThemeProvider>
   );
 }
