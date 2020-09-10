@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Theme for React with Redux and Styled components, facilitating Dark Mode
 
 ## Available Scripts
 
