@@ -4,6 +4,10 @@ import { useSelector, useDispatch } from "react-redux";
 import actions from "../../store/actions";
 import { darkTheme, lightTheme } from "../../styles/theme.js";
 import styled from "styled-components";
+import history from "../../services/history";
+import Routes from "../../routes";
+import { HashRouter as Router } from "react-router-dom";
+
 function App() {
   const theme = useSelector((state) => state.app.theme);
   const dispatch = useDispatch();
@@ -37,6 +41,9 @@ function App() {
         </button>
         <Text>Hello WOrlld</Text>
       </div>
+      <Router history={history} onUpdate={() => window.scrollTo(0, 0)}>
+        <Routes />
+      </Router>
     </ThemeProvider>
   );
 }
