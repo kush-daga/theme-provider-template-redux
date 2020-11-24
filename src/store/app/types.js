@@ -1,3 +1,3 @@
 const NS = "@demoNS/app";
 
-export const SET_THEME = `${NS}/SET_THEME`;
+export const TOGGLE_THEME = `${NS}/TOGGLE_THEME`;

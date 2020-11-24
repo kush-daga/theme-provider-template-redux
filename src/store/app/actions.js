@@ -1,14 +1,14 @@
-import { SET_THEME } from "./types";
+import { TOGGLE_THEME } from "./types";
 
 //Action to buy cake
-export const setTheme = () => {
-  return {
-    type: SET_THEME,
-  };
+export const toggleTheme = () => {
+	return {
+		type: TOGGLE_THEME,
+	};
 };
 
 const appActions = {
-  setTheme,
+	toggleTheme,
 };
 
 export default appActions;
